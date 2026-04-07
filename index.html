@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Basic Reset & Branding */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* Navigation */
+        nav {
+            background: #2c3e50;
+            color: #fff;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a { color: #fff; text-decoration: none; margin-left: 20px; }
+
+        /* Header/Hero Section */
+        header {
+            background: #34495e;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        /* Main Content Containers */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* Project Grid */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: #3498db;
+        }
+
+        footer { text-align: center; padding: 40px; color: #777; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <strong>Vinay Kumar PILLA</strong>
+        <div>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Hi, I'm Vinay Kumar PILLA</h1>
+        <p>A passionate developer specialized in Cloud Computing and DevOps</p>
+    </header>
+
+    <div id="about" class="container">
+        <h2>About Me</h2>
+        <p>Write a brief intro here. Mention what you're studying or the technologies you love working with. Keep it professional but let your personality shine through!</p>
+    </div>
+
+    <div id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Project One</h3>
+                <p>A brief description of what this app does and the tools you used to build it.</p>
+                <a href="#">View Code</a>
+            </div>
+            <div class="project-card">
+                <h3>Project Two</h3>
+                <p>Another awesome project that shows off your problem-solving skills.</p>
+                <a href="#">View Code</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="container">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/username</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 [Your Name]. Built with GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
